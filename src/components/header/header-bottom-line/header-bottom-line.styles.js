@@ -30,5 +30,8 @@ export const HeaderCatalogButton = styled.div`
     cursor: pointer;
     width: 261px;
     height: 51px;
+    : hover{
+        opacity: 0.7;
+    }
 
 `;

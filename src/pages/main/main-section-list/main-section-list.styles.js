@@ -6,10 +6,14 @@ export const MainSectionListStyled = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
-
+    width: 100%;
+    @media (max-width: 1145px) {
+        width: 97%;
+        justify-content: center;
+    }
 `;
 export const MainSectionElementStyled = styled.div`
     width: 165px;
@@ -48,4 +52,17 @@ export const MainSectionElementStyled = styled.div`
         width: 165px;
         height: 54px;
 	}
+    :hover, :hover span, :hover&::before {
+        background: #333333;
+        color: #FFFFFF;
+        border: 1px solid #333333;
+    }
+    :hover&::before{
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+    }
 `;

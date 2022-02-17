@@ -1,0 +1,1 @@
+export { MainCategories } from "./main-categories";

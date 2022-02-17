@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export const HeaderTopLineStyled = styled.div`
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-content: center;
     justify-content: space-between;
     align-items: center;

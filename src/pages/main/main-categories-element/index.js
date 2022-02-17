@@ -1,0 +1,1 @@
+export { MainCategoriesElement } from "./main-categories-element";
