@@ -27,6 +27,7 @@ export const MainSectionElementStyled = styled.div`
     position: relative;
     background: #FFFF padding-box;
     place-self: center;
+    cursor: pointer;
     & span {
         color: #333333;
         position: absolute;

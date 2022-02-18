@@ -1,0 +1,1 @@
+export { MainArticleBlock } from "./main-article-block";
