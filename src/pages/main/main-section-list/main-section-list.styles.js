@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const MainSectionListStyled = styled.div`
     margin-bottom: 60px;
@@ -52,7 +52,7 @@ export const MainSectionElementStyled = styled.div`
         left: 6px;
         width: 165px;
         height: 54px;
-	}
+    }
     :hover, :hover span, :hover&::before {
         background: #333333;
         color: #FFFFFF;

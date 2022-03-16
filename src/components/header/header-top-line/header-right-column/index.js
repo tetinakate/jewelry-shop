@@ -1,1 +1,1 @@
-export { HeaderRightColumn } from "./header-right-column";
+export { HeaderRightColumn } from './header-right-column';

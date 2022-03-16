@@ -1,14 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { injectGlobal } from '@emotion/css';
-import { Global } from '@emotion/react';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { CacheProvider } from '@emotion/react';
 import createCache from '@emotion/cache';
-import { CacheProvider } from "@emotion/react";
-import { App } from "./components/app";
- import { GlobalStyled } from "./global-styles";
 
-import './global-styles';
-
+import { App } from './components/app';
+import { GlobalStyled } from './global-styles';
 
 const emotionCache = createCache({
     key: 'jewelry-shop',
@@ -20,10 +16,9 @@ const Main = (
         <GlobalStyled />
         <App />
     </CacheProvider>
-)
-
+);
 
 ReactDOM.render(
     Main,
-    document.getElementById("root")
-)
+    document.querySelector('#root'),
+);

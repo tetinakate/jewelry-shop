@@ -1,18 +1,20 @@
-import React from "react";
-import { MainSectionListStyled, MainSectionElementStyled } from "./main-section-list.styles";
+import React from 'react';
+import { MainSectionListStyled, MainSectionElementStyled } from './main-section-list.styles';
 
 export const MainSectionList = () => {
-    const sectionListText = ["Свадьба", "МУЖУ", "жене", "партнеру", "коллекции", "редкость"];
+    const sections = ['свадьба', 'мужу', 'жене', 'партнеру', 'коллекции', 'редкость'];
 
-    const elements = sectionListText.map( (el, index) => <MainSectionElementStyled key={index}><span>{el}</span></MainSectionElementStyled>);
+    const elements = sections.map(
+        (item) => (
+            <MainSectionElementStyled key={item}>
+                <span>{item}</span>
+            </MainSectionElementStyled>
+        )
+    );
 
-    return(
-
+    return (
         <MainSectionListStyled>
-
             { elements }
-
         </MainSectionListStyled>
-
-    )
-}
+    );
+};

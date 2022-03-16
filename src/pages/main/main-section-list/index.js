@@ -1,1 +1,1 @@
-export { MainSectionList } from "./main-section-list";
+export { MainSectionList } from './main-section-list';

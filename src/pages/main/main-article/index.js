@@ -1,1 +1,1 @@
-export { MainArticle } from "./main-article";
+export { MainArticle } from './main-article';

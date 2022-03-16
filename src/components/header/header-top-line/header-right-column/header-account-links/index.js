@@ -1,1 +1,1 @@
-export { HeaderAccountLinks } from "./header-account-links";
+export { HeaderAccountLinks } from './header-account-links';

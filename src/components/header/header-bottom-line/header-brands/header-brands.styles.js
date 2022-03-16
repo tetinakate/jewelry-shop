@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const HeaderBrandsStyled = styled.div`
     border-top: 1px solid #FFFFFF;

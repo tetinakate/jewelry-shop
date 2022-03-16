@@ -1,20 +1,19 @@
-import React from "react";
-import { HeaderBrandsStyled, HeaderBrandsElement } from "./header-brands.styles";
-import IMG from "../../../../assets/images";
+import React from 'react';
+import { HeaderBrandsStyled, HeaderBrandsElement } from './header-brands.styles';
+import IMG from '../../../../assets/images';
 
 export const HeaderBrands = () => {
-
     const brandsElement = () => {
-        const arr = []
-        for(let i = 0; i <= 6; i++){
-            arr.push(<HeaderBrandsElement key={`${i}`}><img src={IMG.brands} alt={`brand ${i}`} /></HeaderBrandsElement>)
+        const array = [];
+        for (let index = 0; index <= 6; index += 1) {
+            array.push(<HeaderBrandsElement key={`${index}`}><img src={IMG.brands} alt={`brand ${index}`} /></HeaderBrandsElement>);
         }
-        return arr;
-    }
+        return array.map((element) => element);
+    };
 
-    return(
+    return (
         <HeaderBrandsStyled>
-            {brandsElement().map(e => e)}
+            {brandsElement()}
         </HeaderBrandsStyled>
-    )
-}
+    );
+};

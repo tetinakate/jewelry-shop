@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const SEARCH_WIDTH = 97;
 
@@ -9,6 +9,7 @@ export const SearchWrapperStyled = styled.form`
     align-items: center;
     gap: 16px;
     transition: .3s;
+    cursor: pointer;
 `;
 export const SearchButtonStyled = styled.button`
     background: none;

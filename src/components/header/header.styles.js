@@ -1,5 +1,5 @@
-import styled from "@emotion/styled";
-import IMG from "../../assets/images";
+import styled from '@emotion/styled';
+import IMG from '../../assets/images';
 
 export const HeaderStyled = styled.header`
     width: 100%;
@@ -15,6 +15,7 @@ export const HeaderStyled = styled.header`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
     @media (max-width: 385px) {
         height: auto;
     }

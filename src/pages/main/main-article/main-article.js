@@ -1,27 +1,31 @@
-import React from "react";
-import { MainArticleStyled, MainArticleLinkStyled, MainArticleAdviceStyled, MainArticleBtnStyled } from "./main-article.styles";
-import { MainArticleBlock } from "./main-article-block";
+import React from 'react';
+import { MainArticleStyled } from './main-article.styles';
+import { Button } from '../../../components/elements/button';
+import { Head } from '../../../components/elements/head';
+import { articleBlockImg } from '../../../assets/images';
+import { List } from '../../../components/elements/list';
 
 export const MainArticle = () => {
+    const acticleLinkText = 'Полезные статьи';
+    const acticleAdvice = 'Лучшие советы по подбору дорогих подарков';
+    const acticleButton = 'читать наш блог';
 
-    const acticleLinkText = "Полезные статьи";
-    const acticleAdvice = "Лучшие советы по подбору дорогих подарков";
-    const acticleBtn = "читать наш блог";
-
-    return(
+    return (
         <MainArticleStyled>
+            <Head mode="dark" size="sm" font="normal">
+                {acticleLinkText}
+            </Head>
+            <Head mode="dark" size="lg" font="bold">
+                {acticleAdvice}
+            </Head>
 
-            <MainArticleLinkStyled>{acticleLinkText}</MainArticleLinkStyled>
+            <List data={articleBlockImg} listType="article" />
 
-            <MainArticleAdviceStyled>{acticleAdvice}</MainArticleAdviceStyled>
-
-            <MainArticleBlock />
-
-            <MainArticleBtnStyled>{acticleBtn}</MainArticleBtnStyled>
-
-
-
+            <Button
+                text={acticleButton}
+                mode="dark"
+                size="lg"
+            />
         </MainArticleStyled>
-
-    )
-}
+    );
+};

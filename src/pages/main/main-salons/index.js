@@ -1,1 +1,1 @@
-export { MainSalons } from "./main-salons";
+export { MainSalons } from './main-salons';

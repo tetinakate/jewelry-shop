@@ -1,33 +1,48 @@
-import React from "react";
-import { MainStyled, MainWrapperStyled, MainTextStyled, MainTextBoldStyled } from "./main.styles";
-import { MainSectionList } from "./main-section-list";
-import { MainCategories } from "./main-categories";
-import { MainSalons } from "./main-salons";
-import { MainArticle } from "./main-article";
-
+import React from 'react';
+import { Wrapper } from '../../components/elements/wrapper';
+import { Section } from '../../components/elements/section';
+import { Head } from '../../components/elements/head';
+import { MainSectionList } from './main-section-list';
+import { MainSalons } from './main-salons';
+import { MainArticle } from './main-article';
+import { MainSocial } from './main-social';
+import { MainSubscribe } from './main-subscribe';
+import { List } from '../../components/elements/list';
+import { categoriesImg } from '../../assets/images';
 
 export const Main = () => {
-    const mainText = "К мероприятиям";
-    const mainTextBold = "Настоящая красота здесь!";
+    const mainText = 'К мероприятиям';
+    const mainTextBold = 'Настоящая красота здесь!';
 
     return (
-        <MainStyled>
-            <MainWrapperStyled>
-                <MainTextStyled>{mainText}</MainTextStyled>
-                <MainTextBoldStyled>{mainTextBold}</MainTextBoldStyled>
+        <Wrapper>
+            <Section mode="light">
+                <Head mode="dark" size="sm" font="normal">
+                    {mainText}
+                </Head>
+                <Head mode="dark" size="lg" font="bold">
+                    {mainTextBold}
+                </Head>
 
                 <MainSectionList />
 
-                <MainCategories />
+                <List data={categoriesImg} listType="category" />
 
-            </MainWrapperStyled>
+            </Section>
+            <Section mode="dark">
+                <MainSalons />
+            </Section>
 
-            <MainSalons />
+            <Section mode="light">
+                <MainArticle />
 
-            <MainWrapperStyled>
-                <MainArticle/>
-            </MainWrapperStyled>
+                <MainSocial />
+            </Section>
 
-        </MainStyled>
-    )
-}
+            <Section mode="dark">
+                <MainSubscribe />
+            </Section>
+
+        </Wrapper>
+    );
+};

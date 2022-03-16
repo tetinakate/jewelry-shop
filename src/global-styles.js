@@ -1,14 +1,15 @@
 import React from 'react';
 import { injectGlobal } from '@emotion/css';
 import { Global } from '@emotion/react';
-import GilroyBold from "./assets/fonts/Gilroy-Bold.ttf";
-import GilroyLightEOT from "./assets/fonts/Gilroy-Light.eot";
-import GilroyLightTTF from "./assets/fonts/Gilroy-Light.ttf";
-import GilroyLightWOFF from "./assets/fonts/Gilroy-Light.woff";
-import GilroyLightWOFF2 from "./assets/fonts/Gilroy-Light.woff2";
-import NotoSerifRegular from "./assets/fonts/NotoSerif-Regular.ttf";
-import NotoSerifBold from "./assets/fonts/NotoSerif-Bold.ttf";
+import GilroyBold from './assets/fonts/Gilroy-Bold.ttf';
+import GilroyLightEOT from './assets/fonts/Gilroy-Light.eot';
+import GilroyLightTTF from './assets/fonts/Gilroy-Light.ttf';
+import GilroyLightWOFF from './assets/fonts/Gilroy-Light.woff';
+import GilroyLightWOFF2 from './assets/fonts/Gilroy-Light.woff2';
+import NotoSerifRegular from './assets/fonts/NotoSerif-Regular.ttf';
+import NotoSerifBold from './assets/fonts/NotoSerif-Bold.ttf';
 
+// eslint-disable-next-line no-unused-expressions
 injectGlobal`
     @font-face {
         font-family: 'GilroyBold';
@@ -45,18 +46,19 @@ injectGlobal`
     }
 `;
 
-export const GlobalStyled = () => (
-    <Global
-        styles=
-        {{
-            body: {
-                margin: '0 auto',
-                padding: 0
-            },
-            ul: {
-                margin: 0,
-                padding: 0
-            }
-        }}
-    />
-)
+export function GlobalStyled() {
+    return (
+        <Global
+            styles={{
+                body: {
+                    margin: '0 auto',
+                    padding: 0,
+                },
+                ul: {
+                    margin: 0,
+                    padding: 0,
+                },
+            }}
+        />
+    );
+}

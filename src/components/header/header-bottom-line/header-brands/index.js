@@ -1,1 +1,1 @@
-export { HeaderBrands } from "./header-brands";
+export { HeaderBrands } from './header-brands';
